@@ -78,7 +78,10 @@ project.ext.react = [
 
 apply from: '../../node_modules/react-native-unimodules/gradle.groovy'
 apply from: "../../node_modules/react-native/react.gradle"
+<<<<<<< HEAD
 apply from: '../../node_modules/react-native-vector-icons/fonts.gradle'
+=======
+>>>>>>> 30a680682478e6dce54717e0d2b08eed24b748e5
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -143,9 +146,14 @@ dependencies {
     implementation project(':react-native-screens')
     implementation project(':react-native-reanimated')
     implementation project(':react-native-gesture-handler')
+<<<<<<< HEAD
     implementation project(':react-native-vector-icons')
     implementation project(':react-native-gesture-navigations')
     implementation fileTree(dir: "libs", include: ["*.jar"])
+=======
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(':react-native-vector-icons')
+>>>>>>> 30a680682478e6dce54717e0d2b08eed24b748e5
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.facebook.react:react-native:+"  // From node_modules
     addUnimodulesDependencies()
